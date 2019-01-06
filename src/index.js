@@ -12,7 +12,7 @@ const io = socketio.listen(server);
 
 // --- Db connection
 
-mongoose.connect('mongodb://keagen:keagen1@ds111895.mlab.com:11895/chat-database')
+mongoose.connect('mongodb://localhost/chat-database')
 	.then(db => console.log('db is connected'))
 	.catch(err => console.log(err));
 
